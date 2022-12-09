@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+    <script src="./function.js" type="module"></script>
+</head>
+<body class="bg-purple-600 text-white">
+    <section class="mt-10 border-1 border-x-cyan-100 bg-purple-700 grid place-content-center w-1/3 mx-auto 
+    ring-offset sm: w-2/3 p-2">
+        <div class="my-4">
+            <h1 class="text-2xl underline"> Random Password Generator </h1>
+        </div>
+        <div class="">
+            <form action="#">
+                <div class="w-full h-8 bg-white p-1 text-black mb-3 input-password">
+                    <!-- <input type="text" name="inputPassword" id="inputPassword" class="w-full p-1 bg-white input-password" autocomplete="off" value=""> -->
+                    <!-- < class="w-full bg-white p-1"></p> -->
+                </div>
+                <div class="flex justify-between my-1">
+                    <label for="password-length"> Password Length </label>
+                    <input type="number" name="password-length" id="password-length" min="4" class="text-black w-9 ">
+                </div>
+                <div class="flex justify-between my-1 upper-case">
+                    <label for="password-length"> Contains UpperCase </label>
+                    <input type="checkbox" name="password-length" id="password-length">
+                </div>
+                <div class="flex justify-between my-1 lower-case">
+                    <label for="password-length"> Contains LowerCase </label>
+                    <input type="checkbox" name="password-length" id="password-length">
+                </div>
+                <div class="flex justify-between my-1 numbers">
+                    <label for="password-length"> Contains Numbers </label>
+                    <input type="checkbox" name="password-length" id="password-length">
+                </div>
+                <div class="flex justify-between my-1 symbols">
+                    <label for="password-length"> Contains Symbols </label>
+                    <input type="checkbox" name="password-length" id="password-length">
+                </div>
+                <div class="w-full bg-purple-800 border-2 border-solid border-white p-1 m-auto mt-3 cursor-pointer text-center hover:bg-purple-900 transition-all ease-in-out btn select-none">
+                    <p> Generate Password </p>
+                </div>
+            </form>
+            
+        </div>
+    </section>
+</body>
+</html>
